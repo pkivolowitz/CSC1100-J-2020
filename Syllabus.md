@@ -3,7 +3,7 @@
 
 ---
 
-<h1 id="csc-1100---jterm---2020---syllabus">CSC 1100 - JTERM - 2020 - Syllabus</h1>
+<h1 id="csc-1100---jterm---2020---syllabus-2">CSC 1100 - JTERM - 2020 - Syllabus 2</h1>
 <table border="2">
 	<tbody><tr>
 		<td>Instructor</td>
