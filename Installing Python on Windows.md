@@ -6,7 +6,7 @@ It is required that Python 3.7 be installed as no wheel file for Python 3.8 is a
 
 ### Installation
 
-Link is [here](https://www.python.org/ftp/python/3.7.5/python-3.7.5-amd64.exe).
+Link to the Python installation file is [here](https://www.python.org/ftp/python/3.7.5/python-3.7.5-amd64.exe).
 
 0. Click "Run"
 1. Click on "Add Python 3.7 to PATH"
