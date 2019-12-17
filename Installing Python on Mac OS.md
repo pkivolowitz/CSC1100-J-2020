@@ -146,11 +146,14 @@ Enter `pip --version` into the Terminal and hit enter. You should see a version 
 ```text
 pip 19.0.3 from /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/site-packages/pip (python 3.7)
 ```
+
+`pip` is the Python package manager. Why have one package manager when you can have 50?
+
 ### Python modules first time setup
 
 1. Paste `python -m pip install --upgrade pip setuptools wheel` and hit enter. Alert instructor if the last line printed does not include "Successfully".
 
-2. `pip install PyPl` and hit enter. Alert instructor if the last line doe snot include "Successfully"
+2 `pip install PyPl` and hit enter. Alert instructor if the last line doe snot include "Successfully"
 
 3. Use this [link](https://files.pythonhosted.org/packages/6b/d1/71d3e9cd5e57ff34bd506f815ac0deeaaa655825f41f6fbfbaf8a69886e2/scipy-1..-cp37-cp37m-macosx_10_6_intel.whl). Save the file to your Downloads folder. Wait for the download to finish. **NOTE** Notice the 37 repeated in this file name? It corresponds to having installed Python 3.7.X. If this is not the case, the following will not work and you should alert the instructor. 
 
@@ -161,5 +164,50 @@ pip 19.0.3 from /Library/Developer/CommandLineTools/Library/Frameworks/Python3.f
 6. Back in the command prompt paste `pip install Downloa-0.16.2-cp37-cp37m-macosx_10_6_intel` and hit enter. Alert the instructor if the last line does not include "Successfully".
 
 7. Paste `pip install mutagen` and hit enter. Alert the instructor if the last line does not include "Successfully".
+
+### Install Visual Studio Code
+
+Use this [link](https://code.visualstudio.com/docs/?dv=osx). You will be downloading the Visual Studio Code package for MacOS.
+
+When you try to open it in Catalina it will fail. Why? Because Steve Jobs.
+
+If this happens 
+
+1. go to Preferences --> Security and Privacy.
+2. At the bottom of the dialogue, unlock the settings by clicking on the padlock and enter your password.
+3. Click on "Allow apps downloaded from: App Store and identified developers."
+4. Run the Visual Studio Code install again. This time you will have the change to "Open".
+5. After verifying that you can run Visual Studio Code, you need to move it from your Downloads directory to your Applications folder. In the Finder, right click on Visual Studio Code and select "Copy Visual Studio Code".
+6. Click on Applications, and paste. You should hear a stupid 1980's sound.
+7. Use Spotlight Search now, to confirm your Visual Studio Code is in the right place. Run Visual Studio Code.
+8. Assuming it is now running, right click on its Dock icon. Select Options --> Keep in Dock.
+
+The following is optional - it will allow you to launch VSCode from the Terminal.
+
+In the Terminal, type `cd` and hit return - this ensures you are in your home directory.
+
+Remember you edited `.profile` or `.zprofile`? We will edit it again. I will use `.zprofile`.
+
+```vi .zprofile```
+
+```GA```
+
+You should be in "Insert" mode.
+
+Paste: 
+
+```alias code='open /Applications/Visual\ Studio\ Code.app'```
+
+Note that the single quotation marks here comes from the key next to "Return".
+
+Add a new line then hit the `ESC` key at the top left of your keyboard. Then
+
+```:wq```
+
+Exit the Terminal and enter a new one.
+
+Type `code`. VSCode should come up.
+
+
 
 
