@@ -59,6 +59,12 @@ Copy the following, paste it into the terminal and hit enter.
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
+You'll need to hit enter to "Continue".
+
+Then you'll need to enter your password. Note that this is being entered in the Terminal - your characters will *not* be echoed back to you so it will look like you are not typing anything. This is normal.
+
+At this point a very *large* amount of data will be downloaded - this first installation will take a very long time. I have a top end MBP and a fast WiFi. For me, this step took only two minutes. For you it may take a long time especially because everyone else is hammering the WiFi at the same time.
+
 `homebrew` or just `brew` is the Mac's "missing package manager". A package manager is software that makes installing other software easier. Unlike everything you've been sold, sometimes the Mac does NOT make things easier. Kool Aid, a childhood treat best left in childhood.
 
 ### Add brew to `path`
@@ -67,11 +73,21 @@ Commands that can be run from the terminal can live in many different directorie
 
 The directories to Python must be added to your path.
 
-Upon entering the terminal (recall, you are in your home directory), type the following **EXACTLY**. Any deviation will end in tears.
+Upon entering the terminal (recall, you are in your home directory), type the following **EXACTLY**. Any deviation will end in tears. Except that Apple hates all Professors and recently renamed the file you need to edit (and changed the Terminal in *many* ways for absolutely no friggin' reason. 
 
-```vi .profile```
+For some of you, the file you need is `.profile`. For others (including those with the latest Macs) the file you need to edit is `.zprofile`. Just because.
 
-Opens the editor `vi`.
+To determine which file name you should use, type:
+
+```ls -l .profile```
+
+If you see this: `ls: .profile: No such file or directory`, use `.zprofile`. 
+
+If you see anything like this: `-rw-r--r--  1 yourname  staff  55 Dec 17 14:52 .profile` then continue using `.profile` where I list `.zprofile`.
+
+```vi .zprofile```
+
+Opens the editor `vi`. It is possible this file may be empty. That's OK. Keep right on going.
 
 ```G```
 
@@ -85,11 +101,21 @@ Copy this next line and paste it into the terminal.
 
 ```export PATH="/usr/local/opt/python/libexec/bin:$PATH"```
 
+Add a new line.
+
 Enter `ESC` - this is not a word, rather a key on your keyboard typically at the top left. Hitting escape leaves the append mode.
 
 ```:wq```
 
-Writes the changes to `.profile` and exits `vi`.
+Writes the changes to `.zprofile` and exits `vi`.
+
+Type `exit` and hit enter. The current Terminal will exit - they window may stay around - you can close it. We can change this behavior in Terminal's preferences. 
+
+Reenter the Terminal and check to make sure your changes stuck. Type `echo $PATH`. You should get output that lists Python in the first entry. For example:
+
+```text
+/usr/local/opt/python/libexec/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+```
 
 ### Install Python
 
@@ -97,14 +123,43 @@ Note that any time `brew` is executed it may choose to update its database. Doin
 
 ```brew install python```
 
-Installing anything can take a long time. Be patient but not too patient. Depending upon your computer, installs can take a long time.
+Installing anything can take a long time. 
 
 ### Verify Python is installed
 
+To be safe, exit the current Terminal and enter the Terminal again.
+
 Enter:
 
-```python3 --version```
+```python --version```
 
-A version of Python, if found, will tell you about itself.
+A version of Python, if found, will tell you about itself. I myself did the above on December 17, 2019 and got this:
+
+```text
+Python 3.7.3
+```
+
+### Verify `pip` is installed
+
+Enter `pip --version` into the Terminal and hit enter. You should see a version string that refers to Python 3.7 (or later) such as this:
+
+```text
+pip 19.0.3 from /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/site-packages/pip (python 3.7)
+```
+### Python modules first time setup
+
+1. Paste `python -m pip install --upgrade pip setuptools wheel` and hit enter. Alert instructor if the last line printed does not include "Successfully".
+
+2e `pip install PyPl` and hit enter. Alert instructor if the last line doe snot include "Successfully"
+
+3. Use this [link](https://files.pythonhosted.org/packages/6b/d1/71d3e9cd5e57ff34bd506f815ac0deeaaa655825f41f6fbfbaf8a69886e2/scipy-1..-cp37-cp37m-macosx_10_6_intel.whl). Save the file to your Downloads folder. Wait for the download to finish. **NOTE** Notice the 37 repeated in this file name? It corresponds to having installed Python 3.7.X. If this is not the case, the following will not work and you should alert the instructor. 
+
+4. Back in the command prompt paste `pip install Downloads/scipy-1.4.0-cp37-cp37m-macosx_10_6_intel.whl` and hit enter. Alert the instructor if the last line does not include "Successfully".
+
+. Use this [link](https://files.pythonhosted.org/packages/f7/c5/d2625858ffcc0b5a86557200224be9f1f22a71e5234563d218b6153fb635/scikit_image-0.16.2-cp37-cp37m-macosx_10_6_intel.whl) and  save the file to your Downloads folder. Wait for the download to finish. **NOTE** Notice the 37 repeated in this file name? It corresponds to having installed Python 3.7.X. If this is not the case, the following will not work and you should alert the instructor.
+
+6. Back in the command prompt paste `pip install Downloa-0.16.2-cp37-cp37m-macosx_10_6_intel` and hit enter. Alert the instructor if the last line does not include "Successfully".
+. 
+7. Paste `pip install mutagen` and hit enter. Alert the instructor if the last line does not include "Successfully".
 
 
