@@ -65,7 +65,37 @@ The remaining dialog says "Linter pylint is not installed." Click Install. Some 
 
 Down in the bottom left of the VSCode window it should say "Python 3.7.5 64-bit". The actual number may be different but it *must* begin with **3**.
 
- 
+## Run your (empty) program
 
+Click on the bug icon (that's pessimistic isn't it?) on the left hand side of VSCode. *In the newest version of VSCode Python support* you will see two boxes. One is labeled `Debug with Python` the other is labeled `Run with Python`. 
 
-> Written with [StackEdit](https://stackedit.io/).
+Click `Run with Python`.
+
+A window area at the bottom of VSCode will appear and be filled. It should end with a Terminal prompt.
+
+## Add something real to the empty program
+
+Copy and paste the following into your program:
+
+```python
+#
+import datetime
+print('Hi! The current date and time is:', datetime.datetime.now())
+```
+Remember to save either from the menu or by `⌘s`.
+
+With the bug icon still selected, click "Run with Python."
+
+The output should end with something like:
+
+```text
+Hi! The current date and time is: 2019-12-18 09:57:13.838721
+```
+
+## Add something bad to the program
+
+This is lint:
+
+![lint](./dryer-lint-1-768x512.jpg)
+
+Recall you installed `pylint`.  A linter is a program that picks the lint out of your code. 
