@@ -98,4 +98,40 @@ This is lint:
 
 ![lint](./dryer-lint-1-768x512.jpg)
 
-Recall you installed `pylint`.  A linter is a program that picks the lint out of your code. 
+You installed `pylint`.  A linter is a program that picks the lint out of your code.
+
+Add the following to your program on a line by itself:
+
+```python
+bad bad bad
+```
+
+Now, save the program. After saving, a red squiggle should appear. This is `pylint` doing its job. A red squiggle is never a good thing although sometimes it isn't a bad thing.
+
+Remove the bad line and save again.
+
+## Some VSCode commands
+
+### Hide left
+
+Type `⌘b` a few times. The area on the left will appear and disappear.
+
+### Hide bottom
+
+Type `⌘j` a few times. The area at the bottom will appear and disappear.
+
+### New file
+
+There are several ways of creating a new file in VSCode.
+
+* File --> New File
+* `⌘n`
+* Hovering over the directory name in the file Explorer (in the left window when the Pages icon is selected) and clicking the icon with a plus sign over a page.
+
+### Seeing two views of the same file
+
+If your program or file is large enough, you might want to see different parts of it at the same time. There is an icon that looks like two vertical boxes abutting each other. Clicking this opens a second (or more) view of the currently viewed file.
+
+Note that you can drag any open tab to any of the open views so that instead of looking at more than one view of the same file, you can view more than one file at once.
+
+
