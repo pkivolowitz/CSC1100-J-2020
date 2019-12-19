@@ -5,10 +5,6 @@ These snippets are intended to be annotated by the instructor. After each, exper
 Each of these demonstrate one or more important concepts.
 
 ```python
-perrykivolowitz@Perrys-MBP /tmp % python3
-Python 3.7.5 (default, Nov  1 2019, 02:16:23)
-[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
 >>> 10
 10
 >>> 10 + 10
