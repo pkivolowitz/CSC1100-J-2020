@@ -1,6 +1,8 @@
-# First experiments with Python
+# Day 1 experiments
 
-These snippets are intended to be annotated by the instructor, live, as you experiment yourself.
+These snippets are intended to be annotated by the instructor. After each, experiment yourself.
+
+Each of these demonstrate one or more important concepts.
 
 ```python
 perrykivolowitz@Perrys-MBP /tmp % python3
@@ -63,5 +65,45 @@ NameError: name 'apples' is not defined
 >>>
 ```
 
+```python
+>>> flush = [ '3S', '6S', '4S', '10S', 'QS' ]
+>>> flush
+['3S', '6S', '4S', '10S', 'QS']
+>>> flush[0]
+'3S'
+>>> flush[21]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> flush[-1]
+'QS'
+>>> flush[1:2]
+['6S']
+>>> flush[1:3]
+['6S', '4S']
+>>> flush[3:]
+['10S', 'QS']
+>>>
+```
 
+```python
+>>> abs(-1)
+1
+>>> 2 * 3 + 1
+7
+>>> (2 * 3) + 1
+7
+>>> 2 * (3 + 1)
+8
+>>>
+```
 
+```python
+>>> [1,2] * 4
+[1, 2, 1, 2, 1, 2, 1, 2]
+>>> 'a' * 4
+'aaaa'
+>>> 'na' * 16 + ' batman!'
+'nananananananananananananananana batman!'
+>>> 
+```
