@@ -184,13 +184,16 @@ If this happens
 
 The following is optional - it will allow you to launch VSCode from the Terminal.
 
+#### Old instructions
+
 In the Terminal, type `cd` and hit return - this ensures you are in your home directory.
 
 Remember you edited `.profile` or `.zprofile`? We will edit it again. I will use `.zprofile`.
 
 ```vi .zprofile```
 
-```GA```
+``
+.`GA```
 
 You should be in "Insert" mode.
 
@@ -208,6 +211,14 @@ Exit the Terminal and enter a new one.
 
 Type `code`. VSCode should come up.
 
+#### New Instructions
 
+Inside VSCode type `↑+⌘+P`.
+
+In the text box, type `shell` you should see `Shell Command: Install 'code' command in PATH`.
+
+Select it.
+
+You should see a dialog at the bottom of the screen which says `Shell command 'code' successfully installed in PATH'.
 
 
