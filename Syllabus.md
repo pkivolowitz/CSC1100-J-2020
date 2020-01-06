@@ -57,12 +57,26 @@ A nearly current Windows 10 is required.
 
 MacOS 10 is required. MacOS 10.15 (Catalina) is preferred but not required.
 
+While the needs of this course are modest, I cannot compensate for a laptop that is insufficient. All that I can offer is that the desktop computers in the classroom have all the needed software already installed. During class time, it may be necessary that you use these desktop computers. 
+
+Note that these computers **Do not offer permanent storage**. This means you must either:
+* Make religious use of cloud storage (such as Google Drive) or,
+* Make religious use of a USB drive.
+
+"Religious use" means that prior to beginning work every day, you must ensure your latest work is downloaded or copied onto the desktop computer. It also means that after completing work, you must upload or save your work from the desktop computer.
+
+**Again, any files left on these computers are deleted overnight. Work not saved on a cloud storage service or USB drive will be lost.**
+
+If you do not have a desktop computer at home, all you have access to will be these in-class computers. Unfortunately, this would mean that all classwork would necessarily have to be done in this room.
+ 
 ### Installation equates to (my) frustration
 
-Unfortunately, the planets must align perfectly for installation to procede easily for the entire class. Remember that:
+The planets must align perfectly for installation to procede easily for the **entire** class. I have spent many hours assembling the right software and documenting installation practices. It is critical you succeed in all instructed tasks.
+
+Remember that:
 
 * You will all be trying to download large amounts at the same time over the same WiFi network. Downloading will be *slow*.
-* You have different OS's with different versions of each installed. For an instructor, this is a **nightmare**. I assure you I, at least, **will** become frustrated and **will** swear like a sailor. The f-bomb is one of my basic food groups. *My frustration will be with <u>me</u> and <u>my</u> feelings of helplessness in trying to make things perfect for you*.  
+* You have different OS's with different versions of each installed. For an instructor, this is a **nightmare**. I assure you I, at least, **will** become frustrated and **will** swear like a sailor. The f-bomb is one of my basic food groups. *My frustration will be with <u>me</u> and <u>my</u> feelings of helplessness in trying to make things perfect for you*. Again, if I become frustrated during installing software on your laptops, it isn't you!  
 * You have laptops of varying capability. See previous re: **nightmare**.
 
 The important thing is this: I carry the weight of responsibility for the entire class and I want things to be perfect - so yeah, I will get frustrated. What I ask of you as individuals is to be patient and tolerant. We'll get it right (which may mean you'll need to use a classroom computer).
@@ -73,15 +87,15 @@ $0.00.
 
 ### If you are buying a new laptop
 
-* Do not get an AMD-based laptop - AMD CPU's *are* less expensive but they perform far worse than Intel CPU's.
+* Do not get an AMD-based laptop - AMD CPU's *are* less expensive *but* they perform worse than Intel CPU's in many cases.
 * Get a minimum of a dual core Core i5. Preferred is a quad core Core i5 or i7 (best is any Core i9).
 * Go no older than "8th generation". "9th generation" or later is preferred.
-* Get a minimum of 8 GB of RAM. This is a hard minimum.
+* Get a minimum of 8 GB of RAM. This is a hard minimum. More than 8 GB of RAM is better.
 * Get an SSD - all current Mac laptops are SSD based. *DO NOT GET* a spinning disk drive. For both platforms, 256 GB of space is probably a safe minimum.
 
 This [link](https://www.amazon.com/Acer-i5-8265U-Keyboard-Fingerprint-A515-54-51DJ/dp/B07RF2123Z/ref=sr_1_2?fst=as%3Aoff&qid=1576597664&refinements=p_n_feature_four_browse-bin%3A2289793011&rnid=676578011&s=pc&sr=1-2&th=1)  is provided for reference purposes only - this is NOT a recommendation (personally I think the battery life is too short). This link shows that it is possible to get a decent laptop for around 500 to 600 dollars. Laptops in 700 to 900 dollar range will likely be quite fine - if you stick with the suggestions.
 
-As for how much to spend for a Mac, the top-end Mac desktop all tricked out is about $58,000. Knock yourself out.
+As for how much to spend for a Mac, the top-end Mac desktop all tricked out is about $58,000. Knock yourself out. If you can afford one of these, my son is single and as far as I know, straight, if that makes a difference.
 
 ## Text Book
 
