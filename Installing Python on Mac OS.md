@@ -46,9 +46,9 @@ You will need to create new folders / directories. This is done with mkdir.
 
 Once Python is installed, you can run a Python program like so:
 
-```python3 program_name``` or
+```python program_name``` or
 
-```python3 program_name arg1 arg2 ... argn```
+```python program_name arg1 arg2 ... argn```
 
 ## Install brew
 
@@ -131,7 +131,7 @@ To be safe, exit the current Terminal and enter the Terminal again.
 
 Enter:
 
-```python3 --version```
+```python --version```
 
 A version of Python, if found, will tell you about itself. I myself did the above on December 17, 2019 and got this:
 
@@ -141,7 +141,7 @@ Python 3.7.3
 
 ### Verify `pip` is installed
 
-Enter `pip3 --version` into the Terminal and hit enter. You should see a version string that refers to Python 3.7 (or later) such as this:
+Enter `pip --version` into the Terminal and hit enter. You should see a version string that refers to Python 3.7 (or later) such as this:
 
 ```text
 pip 19.0.3 from /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/site-packages/pip (python 3.7)
@@ -151,11 +151,11 @@ pip 19.0.3 from /Library/Developer/CommandLineTools/Library/Frameworks/Python3.f
 
 ### Python modules first time setup
 
-1. Paste `python3 -m pip install --upgrade pip setuptools wheel` and hit enter. Alert instructor if the last line printed does not include "Successfully".
+1. Paste `python -m pip install --upgrade pip setuptools wheel` and hit enter. Alert instructor if the last line printed does not include "Successfully".
 
 2 `pip install PyPl` and hit enter. Alert instructor if the last line doe snot include "Successfully"
 
-3. Use this [link](https://files.pythonhosted.org/packages/6b/d1/71d3e9cd5e57ff34bd506f815ac0deeaaa655825f41f6fbfbaf8a69886e2/scipy-1..-cp37-cp37m-macosx_10_6_intel.whl). Save the file to your Downloads folder. Wait for the download to finish. **NOTE** Notice the 37 repeated in this file name? It corresponds to having installed Python 3.7.X. If this is not the case, the following will not work and you should alert the instructor. 
+3. Use this [link](https://files.pythonhosted.org/packages/6b/d1/71d3e9cd5e57ff34bd506f815ac0deeaaa655825f41f6fbfbaf8a69886e2/scipy-1.4.0-cp37-cp37m-macosx_10_6_intel.whl). Save the file to your Downloads folder. Wait for the download to finish. **NOTE** Notice the 37 repeated in this file name? It corresponds to having installed Python 3.7.X. If this is not the case, the following will not work and you should alert the instructor. 
 
 4. Back in the command prompt paste `pip install Downloads/scipy-1.4.0-cp37-cp37m-macosx_10_6_intel.whl` and hit enter. Alert the instructor if the last line does not include "Successfully".
 
@@ -184,7 +184,7 @@ If this happens
 
 The following is optional - it will allow you to launch VSCode from the Terminal.
 
-#### Old instructions
+#### Old instructions - Skip to New Instructions
 
 In the Terminal, type `cd` and hit return - this ensures you are in your home directory.
 
