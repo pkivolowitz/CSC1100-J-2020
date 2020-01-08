@@ -46,9 +46,9 @@ You will need to create new folders / directories. This is done with mkdir.
 
 Once Python is installed, you can run a Python program like so:
 
-```python program_name``` or
+```python3 program_name``` or
 
-```python program_name arg1 arg2 ... argn```
+```python3 program_name arg1 arg2 ... argn```
 
 ## Install brew
 
@@ -131,7 +131,7 @@ To be safe, exit the current Terminal and enter the Terminal again.
 
 Enter:
 
-```python --version```
+```python3 --version```
 
 A version of Python, if found, will tell you about itself. I myself did the above on December 17, 2019 and got this:
 
@@ -141,7 +141,7 @@ Python 3.7.3
 
 ### Verify `pip` is installed
 
-Enter `pip --version` into the Terminal and hit enter. You should see a version string that refers to Python 3.7 (or later) such as this:
+Enter `pip3 --version` into the Terminal and hit enter. You should see a version string that refers to Python 3.7 (or later) such as this:
 
 ```text
 pip 19.0.3 from /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/site-packages/pip (python 3.7)
@@ -151,7 +151,7 @@ pip 19.0.3 from /Library/Developer/CommandLineTools/Library/Frameworks/Python3.f
 
 ### Python modules first time setup
 
-1. Paste `python -m pip install --upgrade pip setuptools wheel` and hit enter. Alert instructor if the last line printed does not include "Successfully".
+1. Paste `python3 -m pip install --upgrade pip setuptools wheel` and hit enter. Alert instructor if the last line printed does not include "Successfully".
 
 2 `pip install PyPl` and hit enter. Alert instructor if the last line doe snot include "Successfully"
 
