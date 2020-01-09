@@ -96,7 +96,7 @@ Hi! The current date and time is: 2019-12-18 09:57:13.838721
 
 This is lint:
 
-![lint](./dryer-lint-1-768x512.jpg)
+![lint](./pics/dryer-lint-1-768x512.jpg)
 
 You installed `pylint`.  A linter is a program that picks the lint out of your code.
 
