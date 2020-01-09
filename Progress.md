@@ -33,5 +33,24 @@ On this day:
 * Chapter 1 was assigned as homework.
 * We demo'd a subchapter from the book.
 
+## January 10
+
+On this day we expect:
+
+* To learn about `random`
+* To write a program to play the higher lower game
+* To learn about lists:
+    * Making and empty list
+	* Adding to a list using `append`
+	* Getting the length of a list using `len`
+	* Indexing into a list
+	* Slicing a list
+	* Making a list from `range`
+	* Shuffling a list
+* To learn the `for` loop
+* To write a program to print out a hand of 5 playing cards
+* Chapter 2 will be assigned for over the weekend.
+
+
 
 
