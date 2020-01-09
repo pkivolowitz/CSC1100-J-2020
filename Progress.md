@@ -19,3 +19,19 @@ On this day:
 * We saw a *flow chart*.
 * We used flow charts to diagram three variations on an `if` statement.
 * We examined one form a little more closely.
+
+## January 9
+
+On this day:
+* We reviewed. 
+* We wrote program "ages" which used `input()` and simple `if` statements.
+* We wrote program "temperatures" which said snarky things about various temperature ranges and finally, converted the temperature into Celsius.
+* We learned about `while` loops, using code examples, flow charts and RL examples.
+* We retrofitted a `while` loop into the "temperatures" program.
+* We learned how to print several "things" on one line using commas in a call to `print()`.
+* We heard that feet, degrees (in a circle) and degrees Farenheit are completely made up and that meters, radians and degrees Celsius are real. We also heard about Kelvin. Degrees Kelvin are real too.
+* Chapter 1 was assigned as homework.
+* We demo'd a subchapter from the book.
+
+
+
