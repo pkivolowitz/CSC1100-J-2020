@@ -35,10 +35,25 @@ On this day:
 
 ## January 10
 
-On this day we expect:
+On this day we:
 
-* To learn about `random`
-* To write a program to play the higher lower game
+* reviewed
+* learned about `import` - specifically we imported `random`
+* learned how to use `randint()`
+* learned what `determinism` is and how challenging it can be for computers to generate "random" numbers
+* learned how important random numbers are to science as they are the basis of much of how simulation works
+* wrote three programs featuring while loops
+    * We wrote a program that "rolled a 100 sided die" until a value of 100 came up. We counted the number of times the loop executed.
+	* We modified this program to run 1,000,000 times averaging the results of each trial. This introduced us to nested `while` loops.
+	* We wrote a number guessing game in the range of 1 to 128. The program printed "higher" or "lower" depending on user input
+* were reminded that chapter 1 of the reading is due at 11:59 PM
+* were reminded that chapter 2 of the reading is due Monday night at 11:59 PM
+* were reminded that Monday will start our almost-daily quizzes. Monday's quiz will cover chapter 1
+
+## Future
+
+Someday soon we expect ...
+
 * To learn about lists:
     * Making and empty list
 	* Adding to a list using `append`
