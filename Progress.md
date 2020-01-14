@@ -75,6 +75,18 @@ On this day we:
 
 Today we expect to practice with lists and learn a small number of new things.
 
+* `random.choice()`
+* `random.choices()`
+* list `index()`
+* list `count()`
+* list `sort()`
+* list `pop()`
+* list `remove()`
+* list `extend()`
+* list `insert()`
+
+
+
 
 
 
