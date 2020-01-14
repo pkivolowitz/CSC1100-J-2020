@@ -40,3 +40,7 @@ By the way, `choices` (note the plural) can return more than one item chosen at 
 random.choices([1, 2, 3, 4, 5], k=3)
 ```
 
+## Generate (print) more than one mad lib
+
+How about 10 of them?
+
