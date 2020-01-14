@@ -50,21 +50,31 @@ On this day we:
 * were reminded that chapter 2 of the reading is due Monday night at 11:59 PM
 * were reminded that Monday will start our almost-daily quizzes. Monday's quiz will cover chapter 1
 
-## Future
+## January 13
 
-Someday soon we expect ...
+On this day we:
 
-* To learn about lists:
+* reviewed
+* learned about lists:
     * Making and empty list
-	* Adding to a list using `append`
-	* Getting the length of a list using `len`
-	* Indexing into a list
-	* Slicing a list
-	* Making a list from `range`
-	* Shuffling a list
-* To learn the `for` loop
-* To write a program to print out a hand of 5 playing cards
-* Chapter 2 will be assigned for over the weekend.
+    * Adding to a list using `append`
+    * Getting the length of a list using `len`
+    * Indexing into a list
+    * Slicing a list
+    * Making a list from `range`
+    * Shuffling a list
+    * Tuples are like lists but are "read only"
+* learned that multiple variables can be assigned using commas
+* learned the `for` loop
+* wrote a program to print out a hand of 5 playing cards
+* took a quiz on chapter 1
+* were reminded chapter 2 is due tonight
+* were assigned chapters 3.1 through 3.5.
+
+## January 14
+
+Today we expect to practice with lists and learn a small number of new things.
+
 
 
 
