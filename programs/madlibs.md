@@ -12,6 +12,12 @@ For example:
 
 They quickly drove their dirty car.
 
+Or choose a template of your own such as:
+
+*subject adverb verb a adverb noun*
+
+John unexpectedly dropped a red orange.
+
 ## Lists
 
 Make lists of appropriate words of each type. 
