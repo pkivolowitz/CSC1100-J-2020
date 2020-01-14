@@ -14,7 +14,7 @@ They quickly drove their dirty car.
 
 Or choose a template of your own such as:
 
-*subject adverb verb a adverb noun*
+*subject adverb1 verb a adverb2 noun*
 
 John unexpectedly dropped a red orange.
 
