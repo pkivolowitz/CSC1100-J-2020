@@ -56,7 +56,7 @@ On this day we:
 
 * reviewed
 * learned about lists:
-    * Making and empty list
+    * Making an empty list
     * Adding to a list using `append`
     * Getting the length of a list using `len`
     * Indexing into a list
