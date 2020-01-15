@@ -73,7 +73,18 @@ On this day we:
 
 ## January 14
 
-Today we expect to practice with lists and learn a small number of new things.
+Today we practiced:
+
+* nested loops
+* formatted output
+* making lists from a range
+
+We wrote two more programs:
+
+* Printing a multiplication table
+* Mad libs
+
+We learned about:
 
 * `random.choice()`
 * `random.choices()`
@@ -85,9 +96,25 @@ Today we expect to practice with lists and learn a small number of new things.
 * list `extend()`
 * list `insert()`
 
+We saw:
 
+* George Carlin's differences between baseball and football
+* Abbot and Costello's Who's on First
+* A teaser about `matplotlib`
 
+## January 15
 
+On this day we expect to learn:
+
+* How to read a file
+* How to se string methods like `upper()` and `rstrip()`
+* sets
+* dictionaries
+
+We expect two write two programs exercising:
+
+* Sets
+* Dictionaries
 
 
 
