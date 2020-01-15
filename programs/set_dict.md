@@ -33,7 +33,7 @@ file = open('path to file', 'r')
 ### Reading all the lines
 
 ```python
-while l in file:
+for l in file:
     # do something with l - note you may need to strip new lines from l
 ```
 
