@@ -73,6 +73,8 @@ On this day we:
 
 ## January 14
 
+We reviewed. 
+
 Today we practiced:
 
 * nested loops
@@ -104,17 +106,23 @@ We saw:
 
 ## January 15
 
-On this day we expect to learn:
+We reviewed. During review, in answer to a question, we covered `namedtuple`.
 
-* How to read a file
-* How to se string methods like `upper()` and `rstrip()`
-* sets
-* dictionaries
+On this day we learned:
 
-We expect two write two programs exercising:
+* How to open a file for reading
+* How to read whole lines from a file
+* How to close a file
+* How to use string methods `rstrip()` (and consequently `lstrip()`)
+* That sets can record that some item is `in` a set (or `not in`)
+* How to define a set and various set operations.
 
-* Sets
-* Dictionaries
+We wrote a program that read names from a file and added them to a set. Then, we could search the set for user inputted names and could report if the name was in the set or not.
 
+We began learning about dictionaries.
 
+## January 16
 
+We expect to write the dictionary practice program.
+
+We will learn abot reading CSV files.
