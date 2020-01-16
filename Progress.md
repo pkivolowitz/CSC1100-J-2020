@@ -125,4 +125,4 @@ We began learning about dictionaries.
 
 We expect to write the dictionary practice program.
 
-We will learn abot reading CSV files.
+We will learn about reading CSV files and introduce making our own functions.
