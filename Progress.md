@@ -123,6 +123,25 @@ We began learning about dictionaries.
 
 ## January 16
 
-We expect to write the dictionary practice program.
+* We reviewed. We reheard that the important difference between sets and dictionaries are that sets can only record membership (or not). Dictionaries not only record membership, they also can deliver a value mapped from a particular key. 
+* We wrote the dictionary practice program. The most important thing we learned is that before a key can be accessed it must first be in the dictionary.
+* Chapters 4 and 5 were assigned but as they cover material we have already learned, the due date is far away (the 24th). Chapter 6 is new material and it was assigned for Tuesday, the 21st.
+* We introduced the `csv` module
+* We learned about `csv.reader()`
+* We learned about `csv.DictReader()`
+* We learned that Excel can both read and write csv files.
+* WE READ AND PARSED OUR FIRST CSV FILE!
 
-We will learn about reading CSV files and introduce making our own functions.
+## January 17
+
+On this day we will, review!
+
+We will practice csv some more and learn a bit of `matplotlib`.
+
+We will learn about functions.
+
+We really should revisit `while` and `for` loops and discuss `break` and `continue`.
+
+At the end of Friday we will pretty much will be ready to automate our own tasks!
+
+
