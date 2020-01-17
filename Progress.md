@@ -144,4 +144,9 @@ We really should revisit `while` and `for` loops and discuss `break` and `contin
 
 At the end of Friday we will pretty much will be ready to automate our own tasks!
 
+## Note for future
 
+Work these into the remaining term:
+
+* os
+* shutil
