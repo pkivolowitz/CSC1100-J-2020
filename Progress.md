@@ -134,19 +134,27 @@ We began learning about dictionaries.
 
 ## January 17
 
-On this day we will, review!
+On this day we:
 
-We will practice csv some more and learn a bit of `matplotlib`.
-
-We will learn about functions.
-
-We really should revisit `while` and `for` loops and discuss `break` and `continue`.
-
-At the end of Friday we will pretty much will be ready to automate our own tasks!
+* reviewed
+* learned about `sys.argv` which *really* adds to our power by allowing us to avoid hard coding file names and giving other command line options.
+* learned the importance of *looking before leaping* - we check for the presence of arguments before using them.
+* learned about exiting a program early with `exit()`.
+* learned how important it is to give meaningful error messages.
+* learned about functions:
+  * how to define them
+  * how to call them
+  * how to pass and use arguments
+  * how to return values
+  * how they are not executed immediately when they are encountered by python but are stored and remembered for later
+* revisited the card dealing program - this time using better design leveraging functions. Our goal is not only to deal a hand but to also evaluate the hand.
+* learned about and practiced using compounded data structures like lists that contain dictionaries.
+* remember that chapter 6 (functions) is due on Tuesday - quiz on Wednesday
 
 ## Note for future
 
 Work these into the remaining term:
 
+* We really should revisit `while` and `for` loops and discuss `break` and `continue`.
 * os
 * shutil
