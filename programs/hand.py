@@ -1,5 +1,8 @@
 import random
 
+suits = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
+card_names = ['Ace', 'Duece', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King']
+
 def MakeDeck():
     deck = list(range(52))
     random.shuffle(deck)
@@ -23,17 +26,48 @@ def MakeHand(deck, count):
         hand.append(MakeCard(GetCard(deck)))
     return hand
 
-def CheckForFlushes(hand, precedence, text):
-    suits = { }
+def CheckForStraights(hand, precedence, text):
+    r = []
     p, t = 0, ''
     for c in hand:
-        if c['suit'] in suits:
-            suits[c['suit']] += 1
+        r.append(c['rank'])
+    r = sorted(r)
+    has_ace = r[0] == 0
+    is_straight_over_four_cards = True
+    for i in range(2, 5):
+        if r[i] != r[i-1] + 1:
+            is_straight_over_four_cards = False
+            break
+    if not is_straight_over_four_cards:
+        return precedence, text
+    high_card = card_names[r[4]]
+    if is_straight_over_four_cards and r[0] + 1 == r[1]:
+        # is a natual straight
+        p, t = 4, 'Straight with '
+    elif is_straight_over_four_cards and has_ace and r[4] == 12:
+        p, t = 4, 'Straight with '
+        high_card = 'Ace'
+    if p > precedence:    
+        precedence, text = p, t + high_card + ' High'
+    if precedence == 5:
+        #breakpoint()
+        if high_card == 'Ace':
+            precedence, text = 9, 'Royal Straight ' + text
         else:
-            suits[c['suit']] = 1
-    multiples = sorted(list(suits.values()), reverse=True)
+            precedence, text = 8, 'Straight ' + text + ' with ' + high_card + ' High'
+    return precedence, text
+
+def CheckForFlushes(hand, precedence, text):
+    s = { }
+    p, t = 0, ''
+    for c in hand:
+        if c['suit'] in s:
+            s[c['suit']] += 1
+        else:
+            s[c['suit']] = 1
+    multiples = sorted(list(s.values()), reverse=True)
     if multiples[0] == 5:
-        p, t = 5, 'Flush'
+        p, t = 5, 'Flush in ' + suits[hand[0]['suit']]
     if p > precedence:    
         precedence, text = p, t
     return precedence, text
@@ -67,11 +101,26 @@ def EvaluateHand(hand):
     precedence, text = 0, 'High Card'
     precedence, text = CheckForPairs(hand, precedence, text)
     precedence, text = CheckForFlushes(hand, precedence, text)
-
+    precedence, text = CheckForStraights(hand, precedence, text)
     return precedence, text
 
 if __name__ == "__main__":
     deck = MakeDeck()
     hand = MakeHand(deck, 5)
+    hand = [{'rank': 0, 'suit': 0}, {'rank': 9, 'suit': 0}, {'rank': 10, 'suit': 0}, {'rank': 11, 'suit': 0}, {'rank': 7, 'suit': 1}]
     precedence, text = EvaluateHand(hand)
     print(precedence, text)
+
+def test_high_card():
+    deck = MakeDeck()
+    hand = MakeHand(deck, 5)
+    hand = [{'rank': 0, 'suit': 0}, {'rank': 9, 'suit': 0}, {'rank': 10, 'suit': 0}, {'rank': 11, 'suit': 0}, {'rank': 7, 'suit': 1}]
+    precedence, text = EvaluateHand(hand)
+    assert(text == 'High Card')
+
+def test_straight_flush():
+    deck = MakeDeck()
+    hand = MakeHand(deck, 5)
+    hand = [{'rank': 0, 'suit': 0}, {'rank': 9, 'suit': 0}, {'rank': 10, 'suit': 0}, {'rank': 11, 'suit': 0}, {'rank': 8, 'suit': 0}]
+    precedence, text = EvaluateHand(hand)
+    assert(text == 'Straight Flush in Clubs with Queen High')
