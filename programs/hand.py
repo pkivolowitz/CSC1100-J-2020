@@ -116,11 +116,39 @@ def test_high_card():
     hand = MakeHand(deck, 5)
     hand = [{'rank': 0, 'suit': 0}, {'rank': 9, 'suit': 0}, {'rank': 10, 'suit': 0}, {'rank': 11, 'suit': 0}, {'rank': 7, 'suit': 1}]
     precedence, text = EvaluateHand(hand)
-    assert(text == 'High Card')
+    assert(text == 'High Card' and precedence == 0)
 
 def test_straight_flush():
     deck = MakeDeck()
     hand = MakeHand(deck, 5)
     hand = [{'rank': 0, 'suit': 0}, {'rank': 9, 'suit': 0}, {'rank': 10, 'suit': 0}, {'rank': 11, 'suit': 0}, {'rank': 8, 'suit': 0}]
     precedence, text = EvaluateHand(hand)
-    assert(text == 'Straight Flush in Clubs with Queen High')
+    assert(text == 'Straight Flush in Clubs with Queen High' and precedence == 8)
+
+def test_royal_straight_flush():
+    deck = MakeDeck()
+    hand = MakeHand(deck, 5)
+    hand = [{'rank': 0, 'suit': 1}, {'rank': 9, 'suit': 1}, {'rank': 10, 'suit': 1}, {'rank': 11, 'suit': 1}, {'rank': 12, 'suit': 1}]
+    precedence, text = EvaluateHand(hand)
+    assert(text == 'Royal Straight Flush in Diamonds' and precedence == 9)
+
+def test_one_pair():
+    deck = MakeDeck()
+    hand = MakeHand(deck, 5)
+    hand = [{'rank': 0, 'suit': 1}, {'rank': 9, 'suit': 1}, {'rank': 0, 'suit': 2}, {'rank': 11, 'suit': 1}, {'rank': 12, 'suit': 1}]
+    precedence, text = EvaluateHand(hand)
+    assert(text == 'One Pair' and precedence == 1)
+
+def test_two_pair():
+    deck = MakeDeck()
+    hand = MakeHand(deck, 5)
+    hand = [{'rank': 0, 'suit': 1}, {'rank': 9, 'suit': 1}, {'rank': 0, 'suit': 2}, {'rank': 9, 'suit': 3}, {'rank': 12, 'suit': 1}]
+    precedence, text = EvaluateHand(hand)
+    assert(text == 'Two Pair' and precedence == 2)
+
+def test_three_of_a_kind():
+    deck = MakeDeck()
+    hand = MakeHand(deck, 5)
+    hand = [{'rank': 0, 'suit': 1}, {'rank': 9, 'suit': 1}, {'rank': 0, 'suit': 2}, {'rank': 0, 'suit': 3}, {'rank': 12, 'suit': 1}]
+    precedence, text = EvaluateHand(hand)
+    assert(text == 'Three of a Kind' and precedence == 3)
