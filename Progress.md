@@ -151,6 +151,14 @@ On this day we:
 * learned about and practiced using compounded data structures like lists that contain dictionaries.
 * remember that chapter 6 (functions) is due on Tuesday - quiz on Wednesday
 
+## January 18
+
+On this day we:
+
+* Learned about unit testing
+* Learned how to use `pytest` to perform unit testing
+* Saw how to install pytest (`pip install pytest`)
+
 ## Note for future
 
 Work these into the remaining term:
