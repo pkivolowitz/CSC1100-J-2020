@@ -19,6 +19,8 @@ You must add the following features:
 
 * add markers to the line
 
+* add x and y axis labels
+
 To receive full credit you must add at least some meaningful header comments which must include things like:
 
 * Your name
