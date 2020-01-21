@@ -151,7 +151,7 @@ On this day we:
 * learned about and practiced using compounded data structures like lists that contain dictionaries.
 * remember that chapter 6 (functions) is due on Tuesday - quiz on Wednesday
 
-## January 18
+## January 20
 
 On this day we:
 
@@ -160,10 +160,20 @@ On this day we:
 * Learned how to use `pytest` to perform unit testing
 * Saw how to install pytest (`pip install pytest`)
 
+## January 21
+
+On this day we:
+
+* Reviewed (in particular `pytest`)
+* Learned about `continue` and `break`
+* Wrote a program in incremental steps ("Write a Little. Test a Little")
+    * We read and printed date from a DictReader
+    * We made lists out of the data from a DictReader
+    * We converted the data reading / list making into its own function returning the finished lists
+
 ## Note for future
 
 Work these into the remaining term:
 
-* We really should revisit `while` and `for` loops and discuss `break` and `continue`.
 * os
 * shutil
