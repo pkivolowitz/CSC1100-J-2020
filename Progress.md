@@ -155,6 +155,7 @@ On this day we:
 
 On this day we:
 
+* Reviewed
 * Learned about unit testing
 * Learned how to use `pytest` to perform unit testing
 * Saw how to install pytest (`pip install pytest`)
