@@ -119,8 +119,6 @@ def test_high_card():
     assert(text == 'High Card' and precedence == 0)
 
 def test_straight_flush():
-    deck = MakeDeck()
-    hand = MakeHand(deck, 5)
     hand = [{'rank': 0, 'suit': 0}, {'rank': 9, 'suit': 0}, {'rank': 10, 'suit': 0}, {'rank': 11, 'suit': 0}, {'rank': 8, 'suit': 0}]
     precedence, text = EvaluateHand(hand)
     assert(text == 'Straight Flush in Clubs with Queen High' and precedence == 8)
@@ -135,7 +133,7 @@ def test_royal_straight_flush():
 def test_one_pair():
     deck = MakeDeck()
     hand = MakeHand(deck, 5)
-    hand = [{'rank': 0, 'suit': 1}, {'rank': 9, 'suit': 1}, {'rank': 0, 'suit': 2}, {'rank': 11, 'suit': 1}, {'rank': 12, 'suit': 1}]
+    hand = [{'rank': 0, 'suit': 1}, {'rank': 9, 'suit': 1}, {'rank': 9, 'suit': 2}, {'rank': 11, 'suit': 1}, {'rank': 12, 'suit': 1}]
     precedence, text = EvaluateHand(hand)
     assert(text == 'One Pair' and precedence == 1)
 
