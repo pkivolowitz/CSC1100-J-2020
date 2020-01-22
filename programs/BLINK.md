@@ -1,4 +1,4 @@
-# Blick Comparator
+# Blink Comparator
 
 The Blink Comparator is by today's standards an incredibly simple device. Using it, two images could be flipped one to the other and back to the first. The idea is that any differences between the two images would be easy to detect. Clyde Tombaugh used the one below to discover Pluto in 1930.
 
