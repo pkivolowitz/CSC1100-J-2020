@@ -18,7 +18,7 @@ for year in sorted(yearly_data):
     temps = []
     for d in depths:
         temps.append(yearly_data[year][d])
-    plt.plot(depths, temps, label='5/6/' + str(year))
+    plt.plot(depths, temps, label='5/6/' + str(year), linewidth=3.0)
 
 plt.style.use('fivethirtyeight')
 plt.legend()
