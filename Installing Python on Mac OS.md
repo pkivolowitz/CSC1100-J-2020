@@ -161,7 +161,7 @@ pip 19.0.3 from /Library/Developer/CommandLineTools/Library/Frameworks/Python3.f
 
 5. Use this [link](https://files.pythonhosted.org/packages/f7/c5/d2625858ffcc0b5a86557200224be9f1f22a71e5234563d218b6153fb635/scikit_image-0.16.2-cp37-cp37m-macosx_10_6_intel.whl) and  save the file to your Downloads folder. Wait for the download to finish. **NOTE** Notice the 37 repeated in this file name? It corresponds to having installed Python 3.7.X. If this is not the case, the following will not work and you should alert the instructor.
 
-6. Back in the command prompt paste `pip install Downloa-0.16.2-cp37-cp37m-macosx_10_6_intel` and hit enter. Alert the instructor if the last line does not include "Successfully".
+6. Back in the command prompt paste `pip install Downloads/scikit_image-0.16.2-cp37-cp37m-macosx_10_6_intel.whl` and hit enter. Alert the instructor if the last line does not include "Successfully".
 
 7. Paste `pip install mutagen` and hit enter. Alert the instructor if the last line does not include "Successfully".
 
