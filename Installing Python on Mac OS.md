@@ -163,7 +163,7 @@ pip 19.0.3 from /Library/Developer/CommandLineTools/Library/Frameworks/Python3.f
 
 6. Back in the command prompt paste `pip install Downloads/scikit_image-0.16.2-cp37-cp37m-macosx_10_6_intel.whl` and hit enter. Alert the instructor if the last line does not include "Successfully".
 
-7. Paste `pip install mutagen` and hit enter. Alert the instructor if the last line does not include "Successfully".
+7. Paste `pip install mutagen opencv-python` and hit enter. Alert the instructor if the last line does not include "Successfully".
 
 ### Install Visual Studio Code
 
