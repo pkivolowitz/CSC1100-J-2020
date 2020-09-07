@@ -30,7 +30,7 @@ while True:
 			width, _ = cv2.getTextSize(caption, font, 1, 2)
 			offset = (640 - width[0]) // 2
 			cv2.putText(save_frame, caption, (offset, 50), font, 1, (255,255,255), 2)
-			cv2.imwrite('saveimg.jpg', save_frame)
+		cv2.imwrite('saveimg.jpg', save_frame)
 		break
 
 cap.release()
