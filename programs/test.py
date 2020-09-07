@@ -6,9 +6,7 @@ caption = ''
 if len(sys.argv) > 1:
 	caption = sys.argv[1]
 
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
-#cap.set(3, 640)
-#cap.set(4, 400)
+cap = cv2.VideoCapture(0)
 save_frame = None
 font = cv2.FONT_HERSHEY_DUPLEX
 
@@ -30,7 +28,7 @@ while True:
 			width, _ = cv2.getTextSize(caption, font, 1, 2)
 			offset = (640 - width[0]) // 2
 			cv2.putText(save_frame, caption, (offset, 50), font, 1, (255,255,255), 2)
-			cv2.imwrite('saveimg.jpg', save_frame)
+		cv2.imwrite('saveimg.jpg', save_frame)
 		break
 
 cap.release()
